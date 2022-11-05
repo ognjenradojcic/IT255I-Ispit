@@ -1,0 +1,13 @@
+<div class="container mt-3">
+    <h1 *ngIf="!loaded">Loading...</h1>
+    <div *ngIf="loaded">
+        <h1>{{smartphone.title}}</h1>
+        <p>{{smartphone.description}}</p>
+        <p>{{smartphone.rating}}</p>
+        <h5>{{smartphone.price}}</h5>
+    </div>
+
+    <button class="btn btn-danger btn-large" (click)="onDelete()">Delete</button>
+    <button class="btn btn-primary btn-large" (click)="onUpdate()">Update</button>
+
+</div>
